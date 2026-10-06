@@ -1,47 +1,106 @@
-<!DOCTYPE html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>JS TOURS VIP - Flota</title><style>*{margin:0;padding:0;box-sizing:border-box}body{font-family:-apple-system,sans-serif;background:#0f0f0f;color:#fff;padding-bottom:150px}.topbar{background:#000;padding:12px 16px;display:flex;align-items:center;gap:12px;border-bottom:3px solid #FFD400;position:sticky;top:0;z-index:50}.logo{width:44px;height:44px;background:#FFD400;color:#000;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:9px;text-align:center;line-height:1}.hero{position:relative;height:52vh}.hero img{width:100%;height:100%;object-fit:cover}.hero::after{content:'';position:absolute;inset:0;background:linear-gradient(0deg,#0f0f0f 60%,transparent 85%)}.hero-c{position:absolute;bottom:0;padding:16px;z-index:2;width:100%}.badge{background:#FFD400;color:#000;font-weight:900;padding:6px 12px;border-radius:20px;font-size:10px}.btn{background:#FFD400;color:#000;font-weight:900;padding:16px;border-radius:14px;text-align:center;display:block;text-decoration:none}.card{background:#1e1e1e;border-radius:16px;padding:16px;margin:12px;border:1px solid #2a2a2a}.fleet{display:grid;grid-template-columns:1fr;gap:12px}.fleet-card{display:flex;gap:12px;background:#2a2a2a;border:1px solid #444;border-radius:12px;padding:10px;align-items:center}.fleet-card img{width:90px;height:60px;object-fit:cover;border-radius:8px}.tour-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}.tour-card{background:#2a2a2a;border:2px solid #333;border-radius:14px;overflow:hidden;position:relative;cursor:pointer}.tour-card.act{border-color:#FFD400}.tour-card img{width:100%;height:110px;object-fit:cover}.watermark{position:absolute;top:6px;right:6px;background:rgba(0,0,0,.85);border:1px solid #FFD400;color:#FFD400;font-size:7px;font-weight:900;padding:3px 6px;border-radius:10px}.tinfo{padding:8px;background:#222}.inp{width:100%;padding:14px;border-radius:12px;background:#2a2a2a;border:1px solid #555;color:#fff;margin:6px 0;font-size:15px;display:block;color-scheme:dark}input[type=date]::-webkit-calendar-picker-indicator,input[type=time]::-webkit-calendar-picker-indicator{filter:invert(1)}label{font-size:11px;color:#FFD400;margin:8px 0 2px;display:block;font-weight:800}.sticky{position:fixed;bottom:0;left:0;right:0;background:#181818;border-top:1px solid #333;padding:10px;display:flex;gap:10px;z-index:100}</style></head><body>
+<!DOCTYPE html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>JS TOURS VIP</title><style>*{margin:0;padding:0;box-sizing:border-box}body{font-family:-apple-system,sans-serif;background:#0f0f0f;color:#fff;padding-bottom:150px}.topbar{background:#000;padding:12px 16px;display:flex;align-items:center;gap:12px;border-bottom:3px solid #FFD400;position:sticky;top:0;z-index:50}.logo{width:44px;height:44px;background:#FFD400;color:#000;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:9px;text-align:center;line-height:1}.hero{position:relative;height:45vh}.hero img{width:100%;height:100%;object-fit:cover}.hero::after{content:'';position:absolute;inset:0;background:linear-gradient(0deg,#0f0f0f 65%,transparent 90%)}.hero-c{position:absolute;bottom:0;padding:16px;z-index:2;width:100%}.badge{background:#FFD400;color:#000;font-weight:900;padding:6px 12px;border-radius:20px;font-size:10px}.btn{background:#FFD400;color:#000;font-weight:900;padding:16px;border-radius:14px;text-align:center;display:block;text-decoration:none}.card{background:#1e1e1e;border-radius:16px;padding:16px;margin:12px;border:1px solid #2a2a2a}.inp{width:100%;padding:14px;border-radius:12px;background:#2a2a2a;border:1px solid #555;color:#fff;margin:6px 0;font-size:14px;display:block;color-scheme:dark}input[type=date]::-webkit-calendar-picker-indicator,input[type=time]::-webkit-calendar-picker-indicator{filter:invert(1)}label{font-size:11px;color:#FFD400;margin:10px 0 3px;display:block;font-weight:800;letter-spacing:.5px}.tour-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}.tour-card{background:#2a2a2a;border:2px solid #333;border-radius:14px;overflow:hidden;position:relative;cursor:pointer}.tour-card.act{border-color:#FFD400}.tour-card img{width:100%;height:110px;object-fit:cover}.watermark{position:absolute;top:6px;right:6px;background:rgba(0,0,0,.85);border:1px solid #FFD400;color:#FFD400;font-size:7px;font-weight:900;padding:3px 6px;border-radius:10px}.tinfo{padding:8px;background:#222}.sticky{position:fixed;bottom:0;left:0;right:0;background:#181818;border-top:1px solid #333;padding:10px;display:flex;gap:10px;z-index:100}</style></head><body>
 <div class="topbar"><div class="logo">JS<br>TOURS</div><div><div style="font-weight:900">JS TOURS</div><div style="font-size:9px;opacity:.7;letter-spacing:2px">PUNTA CANA • VIP • PRIVATE</div></div><a href="tel:+17868512651" style="margin-left:auto;background:#FFD400;color:#000;font-weight:900;padding:8px 14px;border-radius:20px;font-size:11px;text-decoration:none">+1 786 851 2651</a></div>
-<div class="hero"><img src="van.jpg" onerror="this.src='31da955f-429d-482e-af76-02591ceaebb2.jpeg'"><div class="hero-c"><span class="badge">🚐 FLOTA VIP • CARROS DE RECOGIDA</span><h1 style="font-size:30px;font-weight:900;line-height:.9;margin-top:8px">TRANSPORTE<br><span style="color:#FFD400">VIP & PRIVADO</span></h1><div style="font-size:11px;margin-top:6px">Mercedes • Toyota • SUV • Vans • Minibus</div></div></div>
-
-<div class="card" style="background:#FFD400;color:#000;border:none"><div style="display:flex;align-items:center;gap:10px"><div style="font-size:24px">🚐</div><div><div style="font-weight:900;font-size:14px">CARROS DE RECOGIDA DISPONIBLES</div><div style="font-size:11px;font-weight:600">Limpios • Aire acondicionado • Chofer profesional • 24/7</div></div></div></div>
-
-<div class="card"><h3 style="color:#FFD400">🚐 Nuestra Flota - Carros de Recogida</h3><div class="fleet">
-<div class="fleet-card"><img src="van.jpg" onerror="this.src='https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=200'"><div><div style="font-weight:800;font-size:13px">🚐 Van Mercedes Sprinter 16 pax</div><div style="font-size:11px;opacity:.7">Ideal grupos • A/C • Maletero grande</div><div style="font-size:10px;color:#FFD400;font-weight:800">★ MÁS RESERVADO</div></div></div>
-<div class="fleet-card"><img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=200"><div><div style="font-weight:800;font-size:13px">🚙 SUV Private 4 pax</div><div style="font-size:11px;opacity:.7">Toyota Fortuner • VIP • Privado</div><div style="font-size:10px;opacity:.6">2-4 personas</div></div></div>
-<div class="fleet-card"><img src="https://images.unsplash.com/photo-1570125909232-eb263c188f7e?w=200"><div><div style="font-weight:800;font-size:13px">🚐 Toyota Hiace 10 pax</div><div style="font-size:11px;opacity:.7">Familiar • Económico • Cómodo</div><div style="font-size:10px;opacity:.6">5-10 personas</div></div></div>
-</div></div>
+<div class="hero"><img src="van.jpg" onerror="this.src='https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=900'"><div class="hero-c"><span class="badge">🚐 CARROS DE RECOGIDA + HOTELES</span><h1 style="font-size:28px;font-weight:900;line-height:.9;margin-top:8px">ELIGE TU<br><span style="color:#FFD400">HOTEL Y CARRO</span></h1></div></div>
 
 <div class="card"><h3 style="color:#FFD400">✈️ Reserva tu Carro de Recogida</h3>
-<label>📍 RUTA</label><select class="inp" id="origen"><option>Aeropuerto PUJ → Hotel (Recogida)</option><option>Hotel → Aeropuerto PUJ (Regreso)</option><option>Hotel → Hotel (Traslado)</option><option>Carros / Buggies RZR Tour</option><option>Caballo Montaña + Recogida</option></select>
-<label>🏨 HOTEL</label><input class="inp" id="hotel" placeholder="Ej: Barcelo Bavaro Palace">
-<label>✈️ NÚMERO DE VUELO</label><input class="inp" id="vuelo" placeholder="Ej: AA 1234, JetBlue 1502" style="border-color:#FFD400;background:#332d00">
+
+<label>📍 RUTA</label><select class="inp" id="origen"><option>Aeropuerto PUJ → Hotel (Recogida)</option><option>Hotel → Aeropuerto PUJ (Regreso)</option><option>Hotel → Hotel (Traslado Bavaro)</option><option>Carros / Buggies RZR Tour</option><option>Caballo Montaña + Recogida</option></select>
+
+<label>🏨 ELIGE TU HOTEL (50 hoteles)</label><select class="inp" id="hotel" style="border-color:#FFD400;background:#332d00;font-weight:600">
+<option value="">-- Toca aquí y elige tu hotel --</option>
+<option>Barcelo Bavaro Palace</option>
+<option>Barcelo Bavaro Beach - Adults Only</option>
+<option>Riu Palace Punta Cana</option>
+<option>Riu Palace Bavaro</option>
+<option>Riu Bambu</option>
+<option>Riu Republica - Adults Only</option>
+<option>Hard Rock Hotel Punta Cana</option>
+<option>Breathless Punta Cana - Adults Only</option>
+<option>Dreams Onyx Punta Cana</option>
+<option>Dreams Royal Beach</option>
+<option>Secrets Royal Beach - Adults Only</option>
+<option>Secrets Cap Cana</option>
+<option>Hyatt Ziva Cap Cana</option>
+<option>Hyatt Zilara Cap Cana - Adults Only</option>
+<option>Paradisus Palma Real</option>
+<option>Paradisus Grand Cana</option>
+<option>Melia Punta Cana Beach - Adults Only</option>
+<option>Melia Caribe Beach</option>
+<option>Grand Palladium Punta Cana</option>
+<option>TRS Turquesa - Adults Only</option>
+<option>TRS Cap Cana - Adults Only</option>
+<option>Grand Bavaro Princess</option>
+<option>Bavaro Princess</option>
+<option>Occidental Punta Cana</option>
+<option>Occidental Caribe</option>
+<option>Catalonia Punta Cana</option>
+<option>Catalonia Bavaro</option>
+<option>Royalton Punta Cana</option>
+<option>Royalton Bavaro</option>
+<option>Royalton Chic - Adults Only</option>
+<option>Majestic Mirage Punta Cana</option>
+<option>Majestic Colonial</option>
+<option>Majestic Elegance</option>
+<option>Iberostar Punta Cana</option>
+<option>Iberostar Dominicana</option>
+<option>Iberostar Grand Bavaro - Adults Only</option>
+<option>Excellence Punta Cana - Adults Only</option>
+<option>Excellence El Carmen - Adults Only</option>
+<option>Nickelodeon Punta Cana</option>
+<option>Ocean El Faro</option>
+<option>Ocean Blue & Sand</option>
+<option>CHIC by Royalton - Adults Only</option>
+<option>Sanctuary Cap Cana - Adults Only</option>
+<option>Tortuga Bay - Puntacana Resort</option>
+<option>The Westin Puntacana</option>
+<option>Four Points by Sheraton Puntacana</option>
+<option>Vista Sol Punta Cana</option>
+<option>VIK Hotel Arena Blanca</option>
+<option>Be Live Collection Punta Cana - Adults Only</option>
+<option>Impressive Punta Cana</option>
+<option>Serenade Punta Cana</option>
+<option>Margarithaville Island Reserve Cap Cana</option>
+<option>Live Aqua Punta Cana - Adults Only</option>
+<option>Otro hotel (escribir abajo)</option>
+</select>
+
+<label>✍️ Si tu hotel no está, escríbelo aquí</label><input class="inp" id="hotel2" placeholder="Ej: Airbnb Los Corales, Villa privada">
+
+<label>✈️ NÚMERO DE VUELO</label><input class="inp" id="vuelo" placeholder="Ej: AA 1234, JetBlue 1502">
+
 <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px"><div><label>📅 FECHA</label><input class="inp" type="date" id="fecha"></div><div><label>⏰ HORA</label><input class="inp" type="time" id="hora" value="15:00"></div></div>
-<div style="display:grid;grid-template-columns:1fr 1fr;gap:10px"><div><label>👥 PERSONAS</label><select class="inp" id="pax"><option>2 personas</option><option>4 personas</option><option>6 personas</option><option>10 personas</option><option>16 personas</option></select></div><div><label>👤 NOMBRE</label><input class="inp" id="nombre" placeholder="Tu nombre"></div></div>
+
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:10px"><div><label>👥 PERSONAS</label><select class="inp" id="pax"><option>2 personas</option><option>3 personas</option><option>4 personas</option><option>5-6 personas</option><option>7-10 personas</option><option>10-16 personas</option></select></div><div><label>👤 NOMBRE</label><input class="inp" id="nombre" placeholder="Tu nombre"></div></div>
 </div>
 
-<div class="card"><h3>📸 Tours + Carros</h3><div class="tour-grid">
-<div class="tour-card act" data-t="Carros RZR Buggies" onclick="this.classList.toggle('act')"><div class="watermark">JS TOURS</div><img src="carros.jpg" onerror="this.src='https://images.unsplash.com/photo-1515405295579-ba7b45403062?w=400'"><div class="tinfo"><b style="font-size:12px;color:#FFD400">🏎️ Carros RZR</b><div style="font-size:10px;opacity:.7">Tour extremo</div></div></div>
-<div class="tour-card act" data-t="Caballo Montaña" onclick="this.classList.toggle('act')"><div class="watermark">JS TOURS</div><img src="caballo-montana.jpg" onerror="this.src='https://images.unsplash.com/photo-1485348686780-5d460d0d7d97?w=400'"><div class="tinfo"><b style="font-size:12px;color:#FFD400">🏔️ Caballo Montaña</b><div style="font-size:10px;opacity:.7">Aventura</div></div></div>
-<div class="tour-card act" data-t="Caballos Playa" onclick="this.classList.toggle('act')"><div class="watermark">JS TOURS</div><img src="caballo-playa.jpg" onerror="this.src='https://images.unsplash.com/photo-1553284965-83fd3e82fa5a?w=400'"><div class="tinfo"><b style="font-size:12px;color:#FFD400">🐴 Caballos Playa</b><div style="font-size:10px;opacity:.7">Playa y rio</div></div></div>
-<div class="tour-card" data-t="Zona Colonial" onclick="this.classList.toggle('act')"><div class="watermark">JS TOURS</div><img src="31da955f-429d-482e-af76-02591ceaebb2.jpeg"><div class="tinfo"><b style="font-size:12px;color:#FFD400">🏛️ Colonial</b><div style="font-size:10px;opacity:.7">Historia</div></div></div>
+<div class="card"><h3 style="color:#FFD400">🚐 Carros de Recogida</h3><div style="display:flex;gap:8px;overflow-x:auto;padding-bottom:6px"><div style="min-width:140px;background:#2a2a2a;border:1px solid #FFD400;border-radius:10px;padding:8px;text-align:center"><div style="font-size:20px">🚐</div><div style="font-size:11px;font-weight:800">Van 16 pax</div><div style="font-size:9px;opacity:.6">Mercedes Sprinter</div></div><div style="min-width:140px;background:#2a2a2a;border:1px solid #444;border-radius:10px;padding:8px;text-align:center"><div style="font-size:20px">🚙</div><div style="font-size:11px;font-weight:800">SUV 4 pax</div><div style="font-size:9px;opacity:.6">Private VIP</div></div><div style="min-width:140px;background:#2a2a2a;border:1px solid #444;border-radius:10px;padding:8px;text-align:center"><div style="font-size:20px">🚌</div><div style="font-size:11px;font-weight:800">Bus 30 pax</div><div style="font-size:9px;opacity:.6">Grupos grandes</div></div></div></div>
+
+<div class="card"><h3>📸 Tours</h3><div class="tour-grid">
+<div class="tour-card act" data-t="Carros RZR Buggies" onclick="this.classList.toggle('act')"><div class="watermark">JS TOURS</div><img src="carros.jpg" onerror="this.src='https://images.unsplash.com/photo-1515405295579-ba7b45403062?w=400'"><div class="tinfo"><b style="font-size:12px;color:#FFD400">🏎️ Carros RZR</b><div style="font-size:10px;opacity:.7">Playa y lodo</div></div></div>
+<div class="tour-card act" data-t="Caballo Montaña" onclick="this.classList.toggle('act')"><div class="watermark">JS TOURS</div><img src="caballo-montana.jpg" onerror="this.src='https://images.unsplash.com/photo-1485348686780-5d460d0d7d97?w=400'"><div class="tinfo"><b style="font-size:12px;color:#FFD400">🏔️ Caballo Montaña</b><div style="font-size:10px;opacity:.7">Vistas</div></div></div>
+<div class="tour-card act" data-t="Caballos Playa" onclick="this.classList.toggle('act')"><div class="watermark">JS TOURS</div><img src="caballo-playa.jpg" onerror="this.src='https://images.unsplash.com/photo-1553284965-83fd3e82fa5a?w=400'"><div class="tinfo"><b style="font-size:12px;color:#FFD400">🐴 Caballos Playa</b><div style="font-size:10px;opacity:.7">Playa</div></div></div>
+<div class="tour-card" data-t="Zona Colonial" onclick="this.classList.toggle('act')"><div class="watermark">JS TOURS</div><img src="31da955f-429d-482e-af76-02591ceaebb2.jpeg"><div class="tinfo"><b style="font-size:12px;color:#FFD400">🏛️ Colonial</b><div style="font-size:10px;opacity:.7">Santo Domingo</div></div></div>
 </div></div>
 
-<div class="sticky"><div style="flex:1"><div style="font-size:10px;opacity:.6">Resumen</div><div style="font-weight:900;font-size:11px" id="res">Recogida • 2 pax</div></div><a id="wbtn" class="btn" style="flex:1">💬 COTIZAR CARRO</a></div>
+<div class="sticky"><div style="flex:1"><div style="font-size:10px;opacity:.6">Resumen</div><div style="font-weight:900;font-size:11px" id="res">Elige hotel • 2 pax</div></div><a id="wbtn" class="btn" style="flex:1">💬 COTIZAR</a></div>
 
 <script>
 let today=new Date().toISOString().split('T')[0];document.getElementById('fecha').value=today;
-function upd(){let o=document.getElementById('origen').value.split(' ')[0];let p=document.getElementById('pax').value;document.getElementById('res').innerText=o+' • '+p}
-document.getElementById('origen').addEventListener('change',upd);document.getElementById('pax').addEventListener('change',upd);
+function upd(){let h=document.getElementById('hotel').value||'sin hotel';let p=document.getElementById('pax').value;document.getElementById('res').innerText=h.substring(0,16)+' • '+p}
+document.getElementById('hotel').addEventListener('change',upd);document.getElementById('pax').addEventListener('change',upd);
 document.getElementById('wbtn').addEventListener('click',e=>{
 e.preventDefault();
 let ori=document.getElementById('origen').value;
-let hot=document.getElementById('hotel').value||'por indicar';
+let hot=document.getElementById('hotel').value||'';
+let hot2=document.getElementById('hotel2').value;
+let hotelFinal=hot2?hot+' ('+hot2+')':hot;
 let fec=document.getElementById('fecha').value;
 let hor=document.getElementById('hora').value;
 let vue=document.getElementById('vuelo').value||'NO INDICADO';
 let pax=document.getElementById('pax').value;
 let nom=document.getElementById('nombre').value||'';
 let tours=[...document.querySelectorAll('.tour-card.act')].map(x=>x.dataset.t).join(', ');
-let msg=`Hola JS TOURS! Soy ${nom}%0A%0AQUIERO CARRO DE RECOGIDA:%0A🚐 Ruta: ${ori}%0A🏨 Hotel: ${hot}%0A✈️ Vuelo: ${vue}%0A📅 ${fec} ${hor}%0A👥 ${pax}%0A🏝️ Tours: ${tours}`;
+let msg=`Hola JS TOURS VIP! Soy ${nom}%0A%0AQUIERO RESERVAR:%0A🚐 Ruta: ${ori}%0A🏨 Hotel: ${hotelFinal}%0A✈️ Vuelo: ${vue}%0A📅 ${fec} ${hor}%0A👥 ${pax}%0A🏝️ Tours: ${tours}%0A%0AVi la web con lista de hoteles`;
 window.open('https://wa.me/17868512651?text='+msg,'_blank')
 });upd();
 </script></body></html>
