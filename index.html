@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>JC TOURS VIP</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#0a0a0a;color:#fff;font-family:system-ui}
+.hero img{width:100%;height:55vh;object-fit:cover}
+.form{margin:15px;border:2px solid #FFD700;border-radius:18px;padding:16px;background:#111}
+label{display:block;margin:12px 0 5px;color:#aaa;font-size:12px}
+select,input{width:100%;padding:14px;border-radius:10px;background:#1e1e1e;color:#fff;border:1px solid #333;font-size:16px}
+.btn{width:100%;background:#FFD700;color:#000;font-weight:900;padding:16px;border:none;border-radius:12px;margin-top:15px;font-size:18px}
+.card{margin:12px;border-radius:12px;overflow:hidden;background:#181818;border:1px solid #222}
+.card img{width:100%;height:200px;object-fit:cover}
+.cb{padding:10px}
+.wa{position:fixed;bottom:10px;left:10px;right:10px;background:#25D366;padding:14px;text-align:center;border-radius:10px;color:#fff;font-weight:900;text-decoration:none}
+</style>
+</head>
+<body>
+<div style="padding:12px;text-align:center"><h2>JC TOURS VIP 🚐</h2><span style="background:#FFD700;color:#000;padding:4px 10px;border-radius:20px;font-size:11px;font-weight:900">VAN REAL OFICIAL</span></div>
+<div class="card"><img src="https://jctours-vip.tiiny.site/buggies-reales.jpg"><div class="cb"><b>💥 Boogies</b><br><small style="color:#888">Lodo y cenote</small></div></div>
+<div class="card"><img src="https://jctours-vip.tiiny.site/caballos-playa.jpg"><div class="cb"><b>🐴 Caballos</b><br><small style="color:#888">Playa + rio</small></div></div>
+<div class="card"><img src="https://jctours-vip.tiiny.site/van-vip.jpg"><div class="cb"><b>🚐 VIP Van</b><br><small style="color:#888">Transporte privado</small></div></div>
+
+<div class="form">
+<h3 style="color:#FFD700;text-align:center">📋 ELIGE TU RESERVA</h3>
+<label>🏨 HOTEL</label>
+<select id="h"><option value="">-- Elige tu hotel --</option><option>Riu Palace / Bambu</option><option>Bahia Principe</option><option>Hard Rock</option><option>Secrets</option><option>Barceló</option><option>Otro</option></select>
+<label>🎯 TOUR</label>
+<select id="t"><option value="">-- Elige tour --</option><option>VIP Van Privada</option><option>Boogies</option><option>Caballos</option><option>Saona</option><option>Combo</option></select>
+<label>👥 PERSONAS</label>
+<select id="p"><option>2 personas</option><option>4 personas</option><option>6+ personas</option></select>
+<label>📅 FECHA</label>
+<input type="date" id="f">
+<button class="btn" onclick="go()">✅ ELEGIR</button>
+</div>
+<a class="wa" href="#" onclick="go();return false">💬 COTIZAR 7868512651</a>
+<script>
+document.getElementById('f').valueAsDate=new Date();
+function go(){
+var h=document.getElementById('h').value;
+var t=document.getElementById('t').value;
+if(h==''||t==''){alert('Elige HOTEL y TOUR');return}
+var p=document.getElementById('p').value;
+var f=document.getElementById('f').value;
+var m="Hola JC TOURS VIP%0AHotel:"+h+"%0ATour:"+t+"%0A"+p+"%0AFecha:"+f;
+location.href="https://wa.me/17868512651?text="+m;
+}
+</script>
+</body>
+</html>
